@@ -1,14 +1,16 @@
 print("Welcome to Computer Basic Quiz.")
-start = input("Start the game? (y/n) - ")
 
-if start == 'y':
-    print("Get ready!")
-elif start == 'n':
-    print("Exited.")
-    quit()
-else:
-    print("Please try again!")
-    quit()
+while True:
+    start = input("Start the game? (y/n) - ")
+    if start == 'y':
+        print("Get ready!")
+        break
+    elif start == 'n':
+        print("Exited.")
+        quit()
+    elif start != 'y' or start != 'n':
+        print("Please try again!")
+        continue
 
 
 score = 0
